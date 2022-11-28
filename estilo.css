@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(to right top, #008cb4, #72a5cb, #acc0de, #dadeee, #ffffff);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    color: #000000;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+
+.main-title h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.task-content {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.task-content input {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.task-content button {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    width: 35px;
+    padding: 0.5rem;
+    background-color: #9E6CCD;
+    cursor: pointer;
+}
+
+.task-wrapper {
+    margin-top: 1rem;
+}
+
+.task-list {
+    list-style: none;
+}
+
+.task-wrapper .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #F7F5F9;
+    margin-bottom: 1rem;
+}
+
+.task-wrapper .task-list li button {
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #9E6CCD;
+}
+
+@media (max-width: 540px) {
+
+    .main-title h1 {
+        font-size: 1.5rem;
+    }
+   
+    .main-content {
+        width: 350px;
+        height: 450px;
+    }
+
+    .task-content input, .task-content button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-content {
+        width: 280px;
+        height: 450px;
+    }
+}
+
+
